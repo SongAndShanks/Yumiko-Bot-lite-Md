@@ -7,24 +7,19 @@ import fetch from 'node-fetch'
 import axios from 'axios'
 import moment from 'moment-timezone'
 import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js'
-
-// ES ➜ Agregué primero el número del Bot como prioridad
-// ES ➜ Si desea recibir reportes debe de usar los tres parámetros (Número, nombre y true)
-// EN ➜ Add the Bot number as priority first
-// EN ➜ If you want to receive reports you must use the three parameters (Number, name and true)
+//  أضف رقم الروبوت كأولوية أولاً 
+// إذا كنت ترغب في تلقي التقارير، يجب عليك استخدام المعلمات الثلاثة (الرقم والاسم والصحيح) 
+//  أضف رقم الروبوت كأولوية أولاً 
+//  تريد تلقي التقارير يجب عليك استخدام المعلمات الثلاثة (الرقم والاسم والصحيح)
 global.owner = [
-['5492266466080', '𝙊𝙬𝙣𝙚𝙧 💖🐈', true], //𝙂𝙖𝙩𝙖𝘽𝙤𝙩𝙇𝙞𝙩𝙚-𝙈𝘿 🌻🐈
-['573026191480', '𝙂𝘽 𝘼𝙨𝙞𝙨𝙩𝙚𝙣𝙘𝙞𝙖 💖🐈', true],
-['593968585383'], ['5217294888993'], ['5492266613038'], ["51906662557"], ['51948705559']]
+['201003942975', '𝑺𝑶𝑵𝑮', true], 
+['212602272422', ' 𝑺𝑯𝑨𝑵𝑲𝑺', true],
+['212602272422'], ['201003942975'], ['212602272422'], ["201003942975"], ['212602272422']]
 
 global.mods = [] 
 global.prems = []
    
-// ES ➜ Agregue el código de idioma el cual usará GataBot  
-// EN ➜ Add the language code which GataBot will use
-//  es = Español      id = Bahasa Indonesia       ar = عرب
-//  en = English      pt = Português 
-global.lenguajeGB = es  //<-- Predeterminado en idioma Español 
+global.lenguajeGB = ar  //<-- Predeterminado en idioma Español 
 
 // ES ➜ Consigue Apikey en https://platform.openai.com/account/api-keys
 global.openai_key = 'sk-0'
@@ -78,50 +73,50 @@ global.fetch = fetch
 global.axios = axios
 global.moment = moment	
 
-global.packname = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩𝙇𝙞𝙩𝙚-𝙈𝘿 🌻🐈'
-global.author = '𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
+global.packname = '𝒀𝑼𝑴𝑰𝑲𝑶-𝑩𝑶𝑻-𝑴𝑫'
+global.author = '𝑺𝑶𝑵𝑮&𝑺𝑯𝑨𝑵𝑲𝑺'
 
 // ES ➜ Está parte es para mostrar el contacto de alguien al usar #contacto
 // EN ➜ This part is to display someone's contact using #contact
 global.official = [ 
-['18059196237', 'Gata Dios 💻', 1], 
-['5492266466080', '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],  
-['59894808483', '𝗖𝘂𝘀𝘁𝗼𝗺𝗲𝗿 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 🥏', 1],
-['5521989092076', '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿𝗮 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1]] 
+['212602272422', '𝑺𝑯𝑨𝑵𝑲𝑺', 1], 
+['201003942975', '𝑺𝑶𝑵𝑮', 1],  
+['212602272422', '𝑺𝑯𝑨𝑵𝑲𝑺', 1],
+['201003942975', '𝑺𝑶𝑵𝑮', 1]] 
 
 global.mail = '' //agrega tú correo
 global.desc = '' //agrega una descripción corta
 global.desc2 = '' //agrega una descripción larga (Solo se aplicará si su whasapp no tiene descripción)
-global.country = '' //agrega tú país ejemplo: 🇪🇨
+global.country = 'Mudar and Morocco ' //agrega tú país ejemplo: 🇪🇨
 
-global.vs = '1.3.2-(beta)'
-global.vsJB = '4.5 (Beta)'
+global.vs = '1.0'
+global.vsJB = '1.0'
 
-global.gt = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩𝙇𝙞𝙩𝙚-𝙈𝘿'
-global.yt = 'https://youtube.com/@gatadios'
-global.yt2 = 'https://www.youtube.com/watch?v=Ko019wvu2Tc&t=71s'
-global.ig = 'https://www.instagram.com/gata_dios'
-global.md = 'https://github.com/GataNina-Li/GataBotLite-MD'
-global.fb = 'https://www.facebook.com/groups/872989990425789/'
+global.gt = '𝒀𝑼𝑴𝑰𝑲𝑶-𝑩𝑶𝑻-𝑴𝑫'
+global.yt = 'https://youtube.com/@SHANGMD?si=ybXYaxS-_xfOou6y'
+global.yt2 = 'https://youtube.com/@SHANGMD?si=ybXYaxS-_xfOou6y'
+global.ig = 'https://youtube.com/@SHANGMD?si=ybXYaxS-_xfOou6y'
+global.md = 'https://youtube.com/@SHANGMD?si=ybXYaxS-_xfOou6y'
+global.fb = 'https://youtube.com/@SHANGMD?si=ybXYaxS-_xfOou6y'
 
-global.nna = 'https://whatsapp.com/channel/0029Va4QjH7DeON0ePwzjS1A' //CANAL UPDATE
-global.nn2 = 'https://whatsapp.com/channel/0029Va6yY0iLY6d6XDmqA03g' //Canal GataBot
-global.nna2 = 'https://chat.whatsapp.com/KaTeeaexrGSHBzPm4s945b' //Help
-global.nn = 'https://chat.whatsapp.com/HBIIrHorHbW2LIxlS9MjRI' //Grupo 1
-global.nnn = 'https://chat.whatsapp.com/CtA2nopOZor0bRwV3FCYH3' //Grupo 2
-global.nnnt = 'https://chat.whatsapp.com/HVLk7c3ZlNN0mJjodw4NkV' //Grupo 3
-global.nnntt = 'https://chat.whatsapp.com/BSDrNVhj2lVElUgrNnGoby' //Grupo 4
-global.nnnttt = 'https://chat.whatsapp.com/CciFSHhsYxd9TqW2tZhhZx' //Grupo 5
-global.nnnttt1 = 'https://chat.whatsapp.com/Ej5AUrpmYnJKYtEa6YMwK6' //Grupo 6 COL
-global.nnnttt2 = 'https://chat.whatsapp.com/I9DsG6ABKer27NbW01Nl39' //Grupo 7 COL
-global.nnnttt3 = 'https://chat.whatsapp.com/KQtWZDVfosTKbheIlndLBN' //Grupo 8 COL
-global.nnnttt4 = 'https://chat.whatsapp.com/BngbJC3aBVhF5KjoaawiT1' //Grupo 9 COL
-global.nnnttt5 = 'https://chat.whatsapp.com/HOCsvLox0Ui7cwzTCeFhPP' //A.T.M.M
-global.paypal = 'https://paypal.me/OficialGD'
-global.asistencia = 'Wa.me/19393844141' //Dudas? escríbeme...
+global.nna = 'https://whatsapp.com/channel/0029VaISKze3rZZcfoYjd837' //CANAL UPDATE
+global.nn2 = 'https://whatsapp.com/channel/0029VaISKze3rZZcfoYjd837' //Canal GataBot
+global.nna2 = 'https://chat.whatsapp.com/KR7szHXhm28DnEe5M7JUjK' //Help
+global.nn = 'https://chat.whatsapp.com/KR7szHXhm28DnEe5M7JUjK' //Grupo 1
+global.nnn = 'https://chat.whatsapp.com/KR7szHXhm28DnEe5M7JUjK' //Grupo 2
+global.nnnt = 'https://chat.whatsapp.com/KR7szHXhm28DnEe5M7JUjK' //Grupo 3
+global.nnntt = 'https://chat.whatsapp.com/KR7szHXhm28DnEe5M7JUjK' //Grupo 4
+global.nnnttt = 'https://chat.whatsapp.com/KR7szHXhm28DnEe5M7JUjK' //Grupo 5
+global.nnnttt1 = 'https://chat.whatsapp.com/KR7szHXhm28DnEe5M7JUjK' //Grupo 6 COL
+global.nnnttt2 = 'https://chat.whatsapp.com/KR7szHXhm28DnEe5M7JUjK' //Grupo 7 COL
+global.nnnttt3 = 'https://chat.whatsapp.com/KR7szHXhm28DnEe5M7JUjK' //Grupo 8 COL
+global.nnnttt4 = 'https://chat.whatsapp.com/KR7szHXhm28DnEe5M7JUjK' //Grupo 9 COL
+global.nnnttt5 = 'https://chat.whatsapp.com/KR7szHXhm28DnEe5M7JUjK' //A.T.M.M
+global.paypal = 'https://chat.whatsapp.com/KR7szHXhm28DnEe5M7JUjK'
+global.asistencia = 'Wa.me/201003942975' //Dudas? escríbeme...
 
-global.wm = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩𝙇𝙞𝙩𝙚-𝙈𝘿 🌻🐈 : 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
-global.igfg = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩𝙇𝙞𝙩𝙚-𝙈𝘿'
+global.wm = '𝑺𝑶𝑵𝑮&𝑺𝑯𝑨𝑵𝑲𝑺'
+global.igfg = '𝒀𝑼𝑴𝑰𝑲𝑶-𝑩𝑶𝑻-𝑴𝑫'
 global.nomorown = owner[0][0]
 
 global.imagen1 = fs.readFileSync('./media/menus/Menu3.jpg')
